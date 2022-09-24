@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 100px;
   font-size: 1rem;
   font-family: 'Red Hat Display', sans-serif;
   background-color: var(--paleBlue);
