@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  margin: 3.125rem;
+  font-size: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--paleBlue);
+  background-image: url('images/pattern-background-desktop.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+main {
+  max-width: 26rem;
+  background-color: var(--veryPaleBlue);
+  border-radius: 0.9375rem;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.315);
+}
+
+main img {
+  width: 100%;
+  border-radius: 0.9375rem 0.9375rem 0 0;
+}
+
+.description h1 {
+  text-align: center;
+  margin: 1.875rem 0 1.25rem 0;
+  font-weight: 900;
+  color: var(--darkBlue);
+}
+
+.description p {
+  text-align: center;
+  font-weight: 500;
+  color: var(--desaturatedBlue);
+  margin: 0 3.125rem 1.875rem 3.125rem;
+}
+
+.informations {
+  background-color: hsla(225, 100%, 94%, 0.233);
+  margin: 0 3.125rem 1.875rem 3.125rem;
+  border-radius: 0.9375rem;
+}
+
+.informations .music-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.music-price img {
+  margin-left: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+}
+
+.music-price .price {
+  display: flex;
+  flex-direction: column;
+}
+
+.music-price .price h2 {
+  font-size: .9rem;
+  font-weight: 900;
+  margin-right: 3rem;
+  color: var(--darkBlue);
+}
+
+.music-price .price  span {
+  font-size: .9rem;
+  color: var(--desaturatedBlue);
+}
+
+.informations a {
+  font-size: .9rem;
+  font-weight: 700;
+  margin-right: 1.25rem;
+  color: var(--brightBlue);
+}
+
+.informations a:hover {
+  color: hsla(245, 75%, 52%, 0.719);
+  text-decoration: none;
+}
+
+.description button {
+  width: 20rem;
+  height: 3.125rem;
+  margin: 0 3.125rem 1.875rem 3.125rem;
+  border-radius: 0.9375rem;
+  border: none;
+  background-color: var(--brightBlue);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  cursor: pointer;
+  box-shadow: 5px 1px 20px rgba(49, 35, 240, 0.589);
+}
+
+.description button:hover {
+  background-color: hsla(245, 75%, 52%, 0.849);
+}
+
+.description .cancel-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 3.125rem;
+  color: var(--desaturatedBlue);
+  text-decoration: none;
+}
+
+.description .cancel-order:hover {
+  color: var(--darkBlue);
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    background: url('./images/pattern-background-mobile.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .description p {
+    margin: 0 1.5625rem 1.875rem 1.5625rem;
+  }
+  .informations {
+    margin: 0 1.875rem 1.875rem 1.875rem;
+  }
+  .music-price img {
+    width: 2.8125rem;
+  }
+  .music-price .price h2 {
+    font-size: .8rem;
+    margin-right: 1.25rem;
+  }
+  .music-price .price{
+    font-size: .8rem;
+  }
+  .informations a {
+    font-size: .8rem;
+    font-weight: 700;
+    margin-right: 1.25rem;
+  }
+  .description button {
+    width: 17.5rem;
+    height: 3.125rem;
+    margin: 0 1.25rem 1.875rem 1.25rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background: url('./images/pattern-background-mobile.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .description p {
+    margin: 0 1.5625rem 1.25rem 1.5625rem;
+  }
+  .informations {
+    margin: 0 1.875rem 0.9375rem 1.875rem;
+  }
+  .music-price img {
+    width: 2.8125rem;
+  }
+  .music-price .price h2 {
+    font-size: .8rem;
+    margin-right: 1.25rem;
+  }
+  .music-price .price{
+    font-size: .8rem;
+  }
+  .informations a {
+    font-size: .8rem;
+    font-weight: 700;
+    margin-right: 1.25rem;
+  }
+  .description button {
+    width: 15.625rem;
+    height: 3.125rem;
+    margin: 0 1.25rem 0.9375rem 1.25rem;
+  }
+}
